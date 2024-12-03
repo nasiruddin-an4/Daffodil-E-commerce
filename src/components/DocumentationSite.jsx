@@ -12,6 +12,8 @@ import {
   BarChart3,
   LayoutDashboard,
 } from "lucide-react";
+import img1 from '../assets/1.png'
+import img2 from '../assets/2.png'
 
 const DocumentationSite = () => {
   const [activeSection, setActiveSection] = useState("intro");
@@ -258,6 +260,17 @@ const DocumentationSite = () => {
                                 </li>
                               </ol>
                             </li>
+                          </ul>
+                          <img src={img1} alt="" className="mt-3" />
+
+                          <ul className="mt-5">
+                            <li>Review and Submit for Approval:
+                              <ul>
+                                <li>After adding all items, review the requisition details to ensure accuracy.</li>
+                                <li>Click on <b>Submit for Approval</b> to forward the requisition to the designated approver(s).</li>
+                              </ul>
+                            </li>
+                            <img src={img2} alt="" />
                           </ul>
                         </p>
                       </div>
