@@ -6,7 +6,7 @@ export const sections = [
         id: 'InventoryManagement',
         title: 'Inventory Management',
     },
-    { id: 'ai-product-management', title: 'AI Product Management' },
+    { id: 'ai-product-management', title: 'Purchase Requisition Details:' },
     { id: 'point-of-sale', title: 'Point of Sale (POS)' },
     { id: 'basic-accounting', title: 'Basic Accounting' },
     { id: 'expense-management', title: 'Expense Management' },
@@ -22,7 +22,7 @@ export const sectionTitle = [
         title: 'Inventory Management',
     },
 
-    { id: 'ai-product-management', title: 'AI Product Management' },
+    { id: 'ai-product-management', title: 'Purchase Requisition Details:' },
     { id: 'point-of-sale-pos', title: 'Point of Sale (POS)' },
     { id: 'basic-accounting', title: 'Basic Accounting' },
     { id: 'expense-management', title: 'Expense Management', content: 'Adding Requisition:  create a new requisition in DCOM, and follow these steps:' },
