@@ -14,6 +14,13 @@ import {
 } from "lucide-react";
 import img1 from '../assets/1.png'
 import img2 from '../assets/2.png'
+import img3 from '../assets/3.png'
+import img4 from '../assets/4.png'
+import img5 from '../assets/5.png'
+import img6 from '../assets/6.png'
+import img7 from '../assets/7.png'
+import img8 from '../assets/8.png'
+import img9 from '../assets/9.png'
 
 const DocumentationSite = () => {
   const [activeSection, setActiveSection] = useState("intro");
@@ -213,7 +220,7 @@ const DocumentationSite = () => {
                           and follow these steps:
                           <ul>
                             <li className="ml-5">
-                              1. Access the Requisition Module:
+                              <b>1. Access the Requisition Module:</b>
                               <ul className="ml-10">
                                 <li>
                                   Navigate to the Requisition module from the
@@ -222,13 +229,13 @@ const DocumentationSite = () => {
                               </ul>
                             </li>
                             <li className="ml-5">
-                              2. Initiate a New Requisition:
+                              <b>2. Initiate a New Requisition:</b>
                               <ul className="ml-10">
                                 <li>Click on Add New Requisition.</li>
                               </ul>
                             </li>
                             <li className="ml-5">
-                              3. Enter Requisition Details:
+                              <b>3. Enter Requisition Details:</b>
                               <ul className="ml-10">
                                 <li>
                                   Requisition Name: Provide a descriptive name
@@ -242,15 +249,15 @@ const DocumentationSite = () => {
                               </ul>
                             </li>
                             <li className="ml-5">
-                              4. Add Products and Variants:
+                              <b>4. Add Products and Variants:</b>
                               <ol className="ml-10">
-                                <li>Click on Add Product.</li>
+                                <li>Click on <b>Add Product</b>.</li>
                                 <li>
                                   From the product list, select the desired
                                   product or variant.
                                 </li>
                                 <li>
-                                  Specify the Quantity required for each
+                                  Specify the <b>Quantity</b> required for each
                                   selected item.
                                 </li>
                                 <li>Click on Add Product.</li>
@@ -261,17 +268,73 @@ const DocumentationSite = () => {
                               </ol>
                             </li>
                           </ul>
-                          <img src={img1} alt="" className="mt-3" />
+                          <img src={img1} alt="" className="my-10" />
 
                           <ul className="mt-5">
-                            <li>Review and Submit for Approval:
+                            <li><b>5. Review and Submit for Approval:</b>
                               <ul>
                                 <li>After adding all items, review the requisition details to ensure accuracy.</li>
                                 <li>Click on <b>Submit for Approval</b> to forward the requisition to the designated approver(s).</li>
                               </ul>
                             </li>
-                            <img src={img2} alt="" />
+                            <img src={img2} alt="" className="my-10"/>
+
                           </ul>
+
+                          <ul className="mt-5">
+                            <li><b>6. Approval Process:</b>
+                              <ul className="ml-5">
+                                <li>The approver(s) will receive a notification to review the requisition.</li>
+                                <li>Upon approval, the requisition will proceed to the next stage in the procurement process.</li>
+                                <li>If rejected, the requisition will be returned with feedback for necessary modifications.</li>
+                              </ul>
+                            </li>
+                            <img src={img3} alt="" className="my-10"/>
+                            <span><b>Note:</b> Ensure that all required fields are completed and that the information provided is accurate to facilitate a smooth approval process.</span>
+                          </ul>
+
+                          <ul className="mt-5">
+                            <li className="text-xl"><b>Creating a Purchase Order from an Approved Requisition:</b>
+                              <ul className="ml-5 mt-5">
+                                <li><b>Access Purchase Orders:</b> Navigate to the <b>Purchase Orders</b> section to view a list of previously added POs.</li>
+                                <li>Upon approval, the requisition will proceed to the next stage in the procurement process.</li>
+                                <li>If rejected, the requisition will be returned with feedback for necessary modifications.</li>
+                              </ul>
+                            </li>
+                            <img src={img4} alt="" className="my-10"/>
+                          </ul>
+
+                          <ul className="mt-5">
+                            <li className="text-xl"><b>Initiate New Purchase Order: </b>Click on <b>Add New</b> to start creating a new PO.
+                            </li>
+                            <img src={img5} alt="" className="my-10"/>
+                          </ul>
+
+                          <ul className="mt-5">
+                            <li className="text-xl"><b>Import from Requisition: </b>At the top of the form, click the <b>Import from Requisition</b> button. This action will display a list of approved requisitions.
+                            </li>
+                            <img src={img6} alt="" className="my-10"/>
+                          </ul>
+
+                          <ul className="mt-5">
+                            <li className="text-xl"><b>Select Requisition:</b> Choose the relevant requisition to auto-populate the PO with the products and quantities specified in the requisition.
+                            </li>
+                            <img src={img7} alt="" className="my-10"/>
+                          </ul>
+
+                          <ul className="mt-5">
+                            <li className="text-xl"><b>Enter Supplier Information:</b>
+                            <ul className="ml-5 mt-5">
+                              <li><b>Select Supplier:</b> Choose the supplier from whom the products will be purchased.</li>
+                              <li><b>Order Date:</b> Specify the date of the order.</li>
+                              <li><b>Payment Term:</b> Define the payment terms (e.g., net 30 days).</li>
+                              <li><b>Attach Documents:</b> If applicable, attach any relevant documents.</li>
+                            </ul>
+                            </li>
+                            <img src={img8} alt="" className="my-10"/>
+                          </ul>
+
+
                         </p>
                       </div>
                     )}
